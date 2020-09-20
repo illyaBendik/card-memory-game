@@ -1,5 +1,3 @@
-# Webpack ts starter
-
 Starter for development typescipt application with webpack. [Russian](./docs/ru.md)
 
 ## Clone starter
