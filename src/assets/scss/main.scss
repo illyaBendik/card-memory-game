@@ -1,0 +1,64 @@
+@import './utils/reset.scss';
+
+section {
+  padding: 0 15px;
+}
+
+@media (min-width: 575.98px) {
+  section {
+    padding: 0 calc(50% - 270px);
+  }
+}
+
+@media (min-width: 767.98px) {
+  section {
+    padding: 0 calc(50% - 360px);
+  }
+}
+
+@media (min-width: 991.98px) {
+  section {
+    padding: 0 calc(50% - 480px);
+  }
+}
+
+@media (min-width: 1199.98px) {
+  section {
+    padding: 0 calc(50% - 590px);
+  }
+}
+
+.wrapper {
+  height: 100vh;
+}
+.title {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__item {
+    max-width: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1 1 120px;
+    height: 120px;
+    opacity: 1;
+    margin: 10px;
+    box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+    transition: color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1s ease-in;
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 0px 10px 1px #ddd, 0 10px 20px #fff;
+    }
+  }
+}
